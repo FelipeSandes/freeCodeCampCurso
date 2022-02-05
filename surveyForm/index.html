@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp - Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">freeCodeCamp Formulário de Pesquisa</h1>
+<p id="description">Obrigado por dedicatar um tempo para preencher o formulário de Pesquisa do freeCodeCamp</p>
+<form id="survey-form">
+  <div id="form-group">
+    <label id="name-label" for="name"><p>Nome:</p>
+    <input id="name" type="text" required placeholder="Nome"></label>
+    
+    <div id="form-group">
+      <label id="email-label" for="email"><p>Digite um e-mail válido:</p>
+    <input id="email" type="email"  required placeholder="E-mail"></label>
+      </div>
+    
+    <div id="form-group">
+      <label id="number-label" for="number"><p>Idade:</p>
+    <input id="number" type="number" min="18" max="99" placeholder="Idade"></label> 
+      </div>
+    
+    <div id="form-group">
+      <label id="dropdown-label" for="dropdown"><p>Qual o curso de seu interesse na freeCodeCamp ?</p>
+        <select id="dropdown" name="course" requerid>
+          <option>Selecione o curso</option>
+          <option value="php">PHP</option>
+          <option value="Linux">Linux</option>
+        </select>
+      </label>
+    </div>
+    
+    <div id="form-group">
+      <p>Você recomendaria a freeCodeCamp ?</p>
+      <label><input type="radio" name="user" value="yes">Sim</label>
+      
+      <label><input type="radio" name="user" value="no">Não</label>
+      
+      <label><input type="radio" name="user" value="possible">Possível</label>
+    </div>
+    
+    <div id="form-group">
+      <p>O que te motiva a estudar na freeCodeCamp ?</p>
+      <label>
+        <input type="checkbox" value="desafios"name="prefer">Desafios
+      </label>
+      <label>
+        <input type="checkbox" value="gratuito"name="prefer">Gratuito
+      </label>
+    </div>
+    
+    <div class="form-group">
+      <p>Deixe sugestões</p>
+      <textarea placeholder="Deixe sugestões" class="input-textarea"></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" id="submit">Enviar</button>
+    </div>
+  </div>
+</form>
+</body>
+</html>
